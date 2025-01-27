@@ -1,8 +1,13 @@
 # Node.js Express Web App to Linux on Azure
+- task: AzureAppServiceSettings@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(b68b77ff-796d-4fe5-8fd6-de0ac1b446d2)'
+    appName: 'BNTestGame'
+    resourceGroupName: 'TestRG'
 # Build a Node.js Express app and deploy it to Azure as a Linux web app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
- 
+
 trigger:
 - master
  
